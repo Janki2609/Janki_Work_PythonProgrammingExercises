@@ -10,20 +10,4 @@ Hints: If the output received is in decimal form, it should be rounded off to it
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 """
-class InOutString(object):
-    def __init__(self):
-        self.string1 = ""
-
-
-    def getString(self):
-        self.string1 = raw_input()
-
-
-    def printString(self):
-        print self.string1.upper()
-
-stringObject = InOutString()
-stringObject.getString()
-stringObject.printString()
-
 
