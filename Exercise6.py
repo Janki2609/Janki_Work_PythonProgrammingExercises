@@ -10,20 +10,14 @@ Hints: If the output received is in decimal form, it should be rounded off to it
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 """
-class InOutString(object):
-    def __init__(self):
-        self.string1 = ""
+import math
 
+numC = 50
+numH = 30
 
-    def getString(self):
-        self.string1 = raw_input()
+output = []
+items=[numD for numD in raw_input().split(',')]
+for d in items:
+    output.append(str(int(round(math.sqrt(2 * numC * float(d) / numH)))))
 
-
-    def printString(self):
-        print self.string1.upper()
-
-stringObject = InOutString()
-stringObject.getString()
-stringObject.printString()
-
-
+print ','.join(output)
