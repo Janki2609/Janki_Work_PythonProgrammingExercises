@@ -12,3 +12,12 @@ Hints: Note: In case of input data being supplied to the question,
 it should be assumed to be a console input in a comma-separated form.
 
 """
+
+x = int(input("I: "))
+y = int(input("J: "))
+
+arr = [[0 for col in range(y)] for row in range(x)]
+for row in range(x):
+    for col in range(y):
+        arr[row][col] = row*col
+print(arr)
